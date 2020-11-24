@@ -2,7 +2,7 @@
 <div class="newPage">
 <div class="container">
 
-<div v-if="films && films.length" class="text-left">
+<div v-if="films && films.length" class="text-left p-4 mb-4">
   <div v-for="film of films" >
   <div class="card">
   <div class="card-header">
@@ -22,8 +22,9 @@
       {{error.message}}
     </li> 
   </ul>
+  <div class="p-4 mb-4">
  <b-pagination-nav :link-gen="linkGen" :number-of-pages="noOfPages" v-model="currentPage" align="center"  :limit="perPage" use-router/>
-
+</div>
   
     </div>
 </div>
